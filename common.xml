@@ -5,8 +5,8 @@
 
         <!-- OP-TEE gits -->
         <project path="optee_client"         name="OP-TEE/optee_client.git" />
-        <project path="optee_os"             name="OP-TEE/optee_os.git" />
-        <project path="optee_ftpm"           name="OP-TEE/optee_ftpm.git" />
+        <project path="optee_os"             name="torsec/optee_os.git" />
+        <project path="optee_ftpm"           name="torsec/optee_ftpm.git" />
         <project path="optee_test"           name="OP-TEE/optee_test.git" />
 
         <!-- linaro-swg gits -->
@@ -17,6 +17,6 @@
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2024.05" clone-depth="1" />
 
         <!-- fTPM implementation -->
-        <project path="ms-tpm-20-ref"        name="microsoft/ms-tpm-20-ref"               revision="98b60a44aba79b15fcce1c0d1e46cf5918400f6a" clone-depth="1" />
+        <project path="ms-tpm-20-ref"        name="torsec/ms-tpm-20-ref"               revision="4a0304cd1c53d46041e7370a4601a2932fe764e7" clone-depth="1" />
 
 </manifest>
