@@ -17,7 +17,7 @@
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2024.05" clone-depth="1" />
 
         <!-- fTPM implementation -->
-        <project path="ms-tpm-20-ref"        name="torsec/ms-tpm-20-ref"               revision="4a0304cd1c53d46041e7370a4601a2932fe764e7" clone-depth="1" />
+        <project path="ms-tpm-20-ref"        name="torsec/ms-tpm-20-ref"               revision="pq-ftpm" clone-depth="1" />
 
         <!-- liboqs implementation -->
         <project path="liboqs"        name="torsec/liboqs" />
