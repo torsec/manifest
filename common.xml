@@ -7,7 +7,7 @@
         <project path="optee_client"         name="OP-TEE/optee_client.git" />
         <project path="optee_os"             name="torsec/optee_os.git" />
         <project path="optee_ftpm"           name="torsec/optee_ftpm.git" />
-        <project path="optee_test"           name="OP-TEE/optee_test.git" />
+        <project path="optee_test"           name="OP-TEE/optee_test.git"                 revision="5fae7bdb151528dfe561fc4585a11843f12ed035" />
 
         <!-- linaro-swg gits -->
         <project path="linux"                name="linaro-swg/linux.git"                  revision="optee" clone-depth="1" />
