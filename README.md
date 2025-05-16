@@ -8,7 +8,44 @@ $ repo init -u https://github.com/torsec/manifest.git
 $ repo sync
 $ cd build
 $ make toolchains
-$ make run
+$ export PATH="$PATH:<project-dir-path>/toolchains/aarch32/bin"
+```
+
+## Change ```tpm2-tools``` and ```tpm2-tss``` sources
+
+### tpm2-tools
+In the ```<project-dir-path>/buildroot/package/tpm2-tools/tpm2-tools.mk``` comment the line:
+
+```
+TPM2_TOOLS_SITE = https://github.com/tpm2-software/tpm2-tools/releases/download/$(TPM2_TOOLS_VERSION)
+```
+
+and add the two following lines:
+
+```
+TPM2_TSS_SITE_METHOD = local
+TPM2_TSS_SITE = <project-dir-path>/build/../tpm2-tss-3.2.2.1
+```
+
+
+### tpm2-tss
+In the ```<project-dir-path>/buildroot/package/tpm2-tss/tpm2-tss.mk``` comment the line:
+
+```
+TPM2_TSS_SITE = https://github.com/tpm2-software/tpm2-tss/releases/download/$(TPM2_TSS_VERSION)
+```
+
+and add the two following lines:
+
+```
+TPM2_TOOLS_SITE_METHOD = local
+TPM2_TOOLS_SITE = <project-dir-path>/build/../tpm2-tools-5.7.2
+```
+
+## Build
+```
+$ cd <project-dir-path>/build
+$ make MEASURED_BOOT_FTPM=y run
 ```
 
 ## Modified components
@@ -17,6 +54,7 @@ $ make run
 - liboqs (https://github.com/torsec/liboqs)
 - TPM 2.0 TSS (https://github.com/torsec/tpm2-tss)
 - tpm2-tools (https://github.com/torsec/tpm2-tools)
+- linux (https://github.com/torsec/linux)
 
 # Offical OP-TEE Implementation
 ## Repo manifest for OP-TEE development
