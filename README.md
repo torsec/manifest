@@ -23,8 +23,8 @@ TPM2_TOOLS_SITE = https://github.com/tpm2-software/tpm2-tools/releases/download/
 and add the two following lines:
 
 ```
-TPM2_TSS_SITE_METHOD = local
-TPM2_TSS_SITE = <project-dir-path>/build/../tpm2-tss-3.2.2.1
+TPM2_TOOLS_SITE_METHOD = local
+TPM2_TOOLS_SITE = <project-dir-path>/build/../tpm2-tools-5.7.2
 ```
 
 
@@ -38,8 +38,8 @@ TPM2_TSS_SITE = https://github.com/tpm2-software/tpm2-tss/releases/download/$(TP
 and add the two following lines:
 
 ```
-TPM2_TOOLS_SITE_METHOD = local
-TPM2_TOOLS_SITE = <project-dir-path>/build/../tpm2-tools-5.7.2
+TPM2_TSS_SITE_METHOD = local
+TPM2_TSS_SITE = <project-dir-path>/build/../tpm2-tss-3.2.2.1
 ```
 
 ## Build
