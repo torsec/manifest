@@ -23,6 +23,6 @@
         <project path="liboqs"        name="torsec/liboqs" />
 
         <!-- Keylime agent -->
-        <project path="rust-keylime"        name="torsec/rust-keylime">
+        <project path="rust-keylime"        name="torsec/rust-keylime" />
 
 </manifest>
