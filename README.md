@@ -42,6 +42,29 @@ TPM2_TSS_SITE_METHOD = local
 TPM2_TSS_SITE = <project-dir-path>/build/../tpm2-tss-3.2.2.1
 ```
 
+### rust-keylime
+
+Move in the ```<project-dir-path>/rust-keylime``` directory and run:
+
+```
+$ cargo fetch
+```
+
+In the ```<project-dir-path>/build/br-ext/package/rust_keylime_ext/rust_keylime_ext.mk``` change the variable ```RUST_KEYLIME_EXT_CARGO_ENV``` in:
+
+```
+RUST_KEYLIME_EXT_CARGO_ENV = \
+     CARGO_HOME=<user_home>/.cargo
+```
+
+In addition, in the same file change the ```RUST_KEYLIME_EXT_SITE``` variable in:
+
+```
+RUST_KEYLIME_EXT_SITE = <project-dir-path>/rust-keylime
+```
+
+or if the cargo home is different fro the user home, put the correct path.
+
 ## Build
 ```
 $ cd <project-dir-path>/build
@@ -55,6 +78,8 @@ $ make MEASURED_BOOT_FTPM=y run
 - TPM 2.0 TSS (https://github.com/torsec/tpm2-tss)
 - tpm2-tools (https://github.com/torsec/tpm2-tools)
 - linux (https://github.com/torsec/linux)
+- rust-keylime (https://github.com/torsec/rust-keylime)
+- buildroot (https://github.com/torsec/buildroot)
 
 # Offical OP-TEE Implementation
 ## Repo manifest for OP-TEE development
