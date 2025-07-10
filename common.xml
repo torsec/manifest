@@ -14,7 +14,7 @@
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
 
         <!-- buildroot git -->
-        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2024.05" clone-depth="1" />
+        <project path="buildroot"            name="torsec/buildroot.git"               revision="pq-ftpm" clone-depth="1" />
 
         <!-- fTPM implementation -->
         <project path="ms-tpm-20-ref"        name="torsec/ms-tpm-20-ref"               revision="pq-ftpm" clone-depth="1" />
