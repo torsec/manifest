@@ -44,6 +44,12 @@ TPM2_TSS_SITE = <project-dir-path>/build/../tpm2-tss-3.2.2.1
 
 ### rust-keylime
 
+Set the supported Rust version:
+
+```
+$ rustup default 1.72.0
+```
+
 Move in the ```<project-dir-path>/rust-keylime``` directory and run:
 
 ```
@@ -61,12 +67,6 @@ In addition, in the same file change the ```RUST_KEYLIME_EXT_SITE``` variable in
 
 ```
 RUST_KEYLIME_EXT_SITE = <project-dir-path>/rust-keylime
-```
-
-Finally set the supported Rust version:
-
-```
-$ rustup default 1.72.0
 ```
 
 or if the cargo home is different fro the user home, put the correct path.
